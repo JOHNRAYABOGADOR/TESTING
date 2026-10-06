@@ -17,7 +17,7 @@
 
 		<section aria-labelledby="add-expense-heading">
 			<h2 id="add-expense-heading">Add an Expense</h2>
-			<form id="expense-form">
+			<form id="expense-form" novalidate>
 				<div>
 					<label for="expense-name">Description</label>
 					<input type="text" id="expense-name" name="expense-name" required>
@@ -44,6 +44,7 @@
 					<input type="date" id="expense-date" name="expense-date" required>
 				</div>
 
+				<p id="expense-error" role="alert" hidden></p>
 				<button type="submit">Add Expense</button>
 			</form>
 		</section>
